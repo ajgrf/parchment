@@ -69,6 +69,8 @@ call s:Style("Delimiter",      [],        [],        "")
 
 ""           HIGHLIGHT GROUP   TEXT       BACKGROUND ATTRIBUTES
 call s:Style("diffAdded",      s:green,   [],        "")
+call s:Style("diffLine",       s:magenta, [],        "")
+call s:Style("diffSubname",    s:magenta, [],        "")
 call s:Style("diffRemoved",    s:red,     [],        "")
 call s:Style("LedgerNegativeNumber", s:red, [],      "")
 call s:Style("LedgerPending",  [],        [],        "bold")
