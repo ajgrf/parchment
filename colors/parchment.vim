@@ -1,4 +1,8 @@
-" parchment - a vim colorscheme inspired by Plan 9 and Leuven
+" parchment - a vim colorscheme inspired by Acme and Leuven
+" Maintainer: Alex Griffin <a@ajgrf.com>
+" Version:    0.1.0-pre
+" License:    This file is placed under an ISC-style license.  See the included
+"             LICENSE file for details.
 
 " Top Matter {{{
 
