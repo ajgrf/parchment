@@ -1,4 +1,4 @@
-" plan9 - a vim colorscheme inspired by Plan 9 and Acme
+" parchment - a vim colorscheme inspired by Plan 9 and Leuven
 
 " Top Matter {{{
 
@@ -6,7 +6,7 @@ highlight clear
 if exists("syntax_on")
   syntax reset
 endif
-let g:colors_name = "plan9"
+let g:colors_name = "parchment"
 
 " color palette
 let s:black =        [ 0, "#000000"]
