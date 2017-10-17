@@ -9,17 +9,25 @@ endif
 let g:colors_name = "plan9"
 
 " color palette
-let s:black =   [0, '#000000']
-let s:red =     [1, '#880000']
-let s:green =   [2, '#004d00']
-let s:yellow =  [3, '#eeee9e']
-let s:blue =    [4, '#004488']
-let s:magenta = [5, '#770077']
-let s:cyan =    [6, '#eaffff']
-let s:white =   [7, '#ffffea']
+let s:black =        [ 0, "#000000"]
+let s:red =          [ 1, "#880000"]
+let s:green =        [ 2, "#005500"]
+let s:brown =        [ 3, "#663311"]
+let s:blue =         [ 4, "#004488"]
+let s:magenta =      [ 5, "#770077"]
+let s:cyan =         [ 6, "#007777"]
+let s:beige =        [ 7, "#eeeecc"]
+let s:pale_gray =    [ 8, "#eaeaea"]
+let s:pale_red =     [ 9, "#ffeaea"]
+let s:pale_green =   [10, "#eaffea"]
+let s:yellow =       [11, "#eeee9e"]
+let s:pale_blue =    [12, "#cceeff"]
+let s:pale_magenta = [13, "#ffeaff"]
+let s:pale_cyan =    [14, "#eaffff"]
+let s:pale_yellow =  [15, "#ffffea"]
 
 " need this to stay legible without the matching terminal theme
-let s:text = &background == "dark" ? s:white : s:black
+let s:text = &background == "dark" ? s:pale_yellow : s:black
 
 " Sets the text color, background color, and attributes for the given
 " highlight group, in both terminal and gui vim. The values of a:hlgroup and
@@ -41,93 +49,93 @@ endfunction
 " Standard Syntax Highlighting Groups {{{
 
 if has("gui_running")
-  call s:Style("Normal", s:black, s:white, "")
+  call s:Style("Normal", s:black, s:pale_yellow, "")
 else
   call s:Style("Normal", [], [], "")
 endif
 
-""           HIGHLIGHT GROUP   TEXT       BACKGROUND ATTRIBUTES
-call s:Style("Constant",       [],        [],        "")
-call s:Style("Identifier",     [],        [],        "")
-call s:Style("Ignore",         [],        [],        "")
-call s:Style("Type",           [],        [],        "")
-call s:Style("Statement",      [],        [],        "")
-call s:Style("Comment",        s:blue,    [],        "")
-call s:Style("String",         s:green,   [],        "")
-call s:Style("Special",        s:magenta, [],        "")
-call s:Style("SpecialComment", s:blue,    [],        "")
-call s:Style("PreProc",        [],        [],        "")
-call s:Style("Underlined",     [],        [],        "underline")
-call s:Style("Error",          s:red,     [],        "")
-call s:Style("Todo",           s:blue,    [],        "bold")
-call s:Style("MatchParen",     [],        s:yellow,  "")
-call s:Style("Delimiter",      [],        [],        "")
+""           HIGHLIGHT GROUP   TEXT           BACKGROUND      ATTRIBUTES
+call s:Style("Constant",       [],            [],             "")
+call s:Style("Identifier",     [],            [],             "")
+call s:Style("Ignore",         [],            [],             "")
+call s:Style("Type",           [],            [],             "")
+call s:Style("Statement",      [],            [],             "")
+call s:Style("Comment",        s:blue,        [],             "")
+call s:Style("String",         s:green,       [],             "")
+call s:Style("Special",        s:magenta,     [],             "")
+call s:Style("SpecialComment", s:blue,        [],             "")
+call s:Style("PreProc",        [],            [],             "")
+call s:Style("Underlined",     [],            [],             "underline")
+call s:Style("Error",          s:red,         [],             "")
+call s:Style("Todo",           s:blue,        [],             "bold")
+call s:Style("MatchParen",     [],            s:pale_blue,    "")
+call s:Style("Delimiter",      [],            [],             "")
 
 " }}}
 
 " FileType-specific Tweaks {{{
 
-""           HIGHLIGHT GROUP   TEXT       BACKGROUND ATTRIBUTES
-call s:Style("diffAdded",      s:green,   [],        "")
-call s:Style("diffLine",       s:magenta, [],        "")
-call s:Style("diffSubname",    s:magenta, [],        "")
-call s:Style("diffRemoved",    s:red,     [],        "")
-call s:Style("LedgerNegativeNumber", s:red, [],      "")
-call s:Style("LedgerPending",  [],        [],        "bold")
-call s:Style("shCommandSub",   s:text,    [],        "")
-call s:Style("shDeref",        s:magenta, [],        "")
-call s:Style("shEcho",         s:text,    [],        "")
-call s:Style("shQuote",        s:green,   [],        "")
-call s:Style("vimFuncSID",     s:text,    [],        "")
+""           HIGHLIGHT GROUP   TEXT           BACKGROUND      ATTRIBUTES
+call s:Style("diffAdded",      s:green,       s:pale_green,   "")
+call s:Style("diffLine",       s:magenta,     s:pale_magenta, "")
+call s:Style("diffSubname",    s:magenta,     s:pale_magenta, "")
+call s:Style("diffRemoved",    s:red,         s:pale_red,     "")
+call s:Style("LedgerNegativeNumber", s:red,   [],             "")
+call s:Style("LedgerPending",  [],            [],             "bold")
+call s:Style("shCommandSub",   s:text,        [],             "")
+call s:Style("shDeref",        s:magenta,     [],             "")
+call s:Style("shEcho",         s:text,        [],             "")
+call s:Style("shQuote",        s:green,       [],             "")
+call s:Style("vimFuncSID",     s:text,        [],             "")
 
 " }}}
 
 " Vim UI Highlight Groups {{{
 
-""           HIGHLIGHT GROUP   TEXT       BACKGROUND ATTRIBUTES
-call s:Style("NonText",        [],        s:cyan,    "")
-call s:Style("EndOfBuffer",    [],        [],        "bold")
-call s:Style("SpecialKey",     [],        s:cyan,    "")
-call s:Style("LineNr",         [],        s:cyan,    "")
-call s:Style("CursorLineNr",   [],        s:cyan,    "")
-call s:Style("ErrorMsg",       s:white,   s:red,     "bold")
-call s:Style("MoreMsg",        [],        [],        "bold")
-call s:Style("ModeMsg",        [],        [],        "bold")
-call s:Style("Question",       [],        [],        "bold")
-call s:Style("Title",          s:magenta, [],        "")
-call s:Style("WarningMsg",     s:red,     [],        "")
-call s:Style("Cursor",         [],        [],        "reverse")
-call s:Style("lCursor",        s:white,   s:magenta, "")
-call s:Style("Visual",         [],        s:yellow,  "")
-call s:Style("VisualNOS",      [],        [],        "bold,underline")
-call s:Style("TabLine",        [],        s:cyan,    "")
-call s:Style("TabLineSel",     [],        s:cyan,    "bold")
-call s:Style("TabLineFill",    [],        s:cyan,    "")
-call s:Style("ColorColumn",    s:white,   s:red,     "")
-call s:Style("CursorColumn",   [],        [],        "underline")
-call s:Style("CursorLine",     [],        [],        "underline")
-call s:Style("VertSplit",      [],        s:cyan,    "")
-call s:Style("StatusLine",     s:white,   s:blue,    "bold")
-call s:Style("StatusLineNC",   [],        s:cyan,    "")
-call s:Style("WildMenu",       s:white,   s:magenta, "bold")
-call s:Style("Search",         [],        [],        "bold")
-call s:Style("IncSearch",      [],        s:yellow,  "bold")
-call s:Style("Directory",      s:blue,    [],        "bold")
-call s:Style("DiffAdd",        s:green,   [],        "")
-call s:Style("DiffDelete",     s:red,     [],        "")
-call s:Style("DiffChange",     s:magenta, [],        "")
-call s:Style("DiffText",       s:magenta, [],        "bold")
-call s:Style("Folded",         [],        s:cyan,    "")
-call s:Style("FoldColumn",     [],        s:cyan,    "")
-call s:Style("SignColumn",     [],        s:cyan,    "")
-call s:Style("Pmenu",          [],        s:cyan,    "")
-call s:Style("PmenuSel",       s:white,   s:blue,    "bold")
-call s:Style("PmenuSbar",      [],        s:cyan,    "")
-call s:Style("PmenuThumb",     [],        s:blue,    "")
-call s:Style("SpellBad",       s:red,     [],        "underline")
-call s:Style("SpellCap",       s:green,   [],        "underline")
-call s:Style("SpellRare",      s:green,   [],        "underline")
-call s:Style("SpellLocal",     s:green,   [],        "underline")
+""           HIGHLIGHT GROUP   TEXT           BACKGROUND      ATTRIBUTES
+call s:Style("NonText",        [],            s:pale_cyan,    "")
+call s:Style("EndOfBuffer",    [],            [],             "bold")
+call s:Style("SpecialKey",     [],            s:pale_cyan,    "")
+call s:Style("LineNr",         [],            s:pale_cyan,    "")
+call s:Style("CursorLineNr",   [],            s:pale_cyan,    "")
+call s:Style("ErrorMsg",       s:pale_yellow, s:red,          "bold")
+call s:Style("MoreMsg",        [],            [],             "bold")
+call s:Style("ModeMsg",        [],            [],             "bold")
+call s:Style("Question",       [],            [],             "bold")
+call s:Style("Title",          s:magenta,     [],             "")
+call s:Style("WarningMsg",     s:red,         [],             "")
+call s:Style("Cursor",         [],            [],             "reverse")
+call s:Style("lCursor",        s:pale_yellow, s:magenta,      "")
+call s:Style("Visual",         [],            s:yellow,       "")
+call s:Style("VisualNOS",      [],            [],             "bold,underline")
+call s:Style("TabLine",        [],            s:pale_cyan,    "")
+call s:Style("TabLineSel",     [],            s:pale_cyan,    "bold")
+call s:Style("TabLineFill",    [],            s:pale_cyan,    "")
+call s:Style("ColorColumn",    s:pale_yellow, s:red,          "")
+call s:Style("CursorColumn",   [],            s:beige,        "")
+call s:Style("CursorLine",     [],            s:beige,        "")
+call s:Style("VertSplit",      [],            s:pale_cyan,    "")
+call s:Style("StatusLine",     s:pale_yellow, s:blue,         "bold")
+call s:Style("StatusLineNC",   [],            s:pale_cyan,    "")
+call s:Style("WildMenu",       s:pale_yellow, s:magenta,      "bold")
+call s:Style("Search",         [],            [],             "bold")
+call s:Style("IncSearch",      [],            s:pale_blue,    "bold")
+call s:Style("Directory",      s:blue,        [],             "bold")
+call s:Style("DiffAdd",        s:green,       s:pale_green,   "")
+call s:Style("DiffDelete",     s:red,         s:pale_red,     "")
+call s:Style("DiffChange",     s:magenta,     s:pale_magenta, "")
+call s:Style("DiffText",       s:magenta,     s:pale_magenta, "bold")
+call s:Style("Folded",         [],            s:pale_cyan,    "")
+call s:Style("FoldColumn",     [],            s:pale_cyan,    "")
+call s:Style("SignColumn",     [],            s:pale_cyan,    "")
+call s:Style("Pmenu",          [],            s:pale_cyan,    "")
+call s:Style("PmenuSel",       s:pale_yellow, s:blue,         "bold")
+call s:Style("PmenuSbar",      [],            s:pale_cyan,    "")
+call s:Style("PmenuThumb",     [],            s:blue,         "")
+call s:Style("SpellBad",       s:red,         [],             "undercurl")
+call s:Style("SpellCap",       s:green,       [],             "undercurl")
+call s:Style("SpellRare",      s:green,       [],             "undercurl")
+call s:Style("SpellLocal",     s:green,       [],             "undercurl")
 
 " Purposefully left unset: Conceal
 
