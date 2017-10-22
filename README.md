@@ -6,7 +6,9 @@ eyes, or if you find most colorschemes too busy.
 
 ## Screenshots
 
-Coming soon...
+![Go Screenshot](./img/golang.png "Go Screenshot")
+
+![Markdown Screenshot](./img/markdown.png "Markdown Screenshot")
 
 ## Installation
 
