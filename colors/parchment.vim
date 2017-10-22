@@ -30,9 +30,6 @@ let s:pale_magenta = [13, "#ffeaff"]
 let s:pale_cyan =    [14, "#eaffff"]
 let s:pale_yellow =  [15, "#ffffea"]
 
-" need this to stay legible without the matching terminal theme
-let s:text = &background == "dark" ? s:pale_yellow : s:black
-
 " Sets the text color, background color, and attributes for the given
 " highlight group, in both terminal and gui vim. The values of a:hlgroup and
 " a:attr are directly inserted into a highlight command.
@@ -112,11 +109,11 @@ call s:Style("markdownCode",   s:blue,        [],             "")
 call s:Style("markdownCodeBlock", s:blue,     [],             "")
 call s:Style("markdownLineBreak", s:cyan,     [],             "underline")
 call s:Style("markdownUrl",    s:cyan,        [],             "underline")
-call s:Style("shCommandSub",   s:text,        [],             "")
+call s:Style("shCommandSub",   [],            [],             "")
 call s:Style("shDeref",        s:magenta,     [],             "")
-call s:Style("shEcho",         s:text,        [],             "")
+call s:Style("shEcho",         s:black,       [],             "")
 call s:Style("shQuote",        s:green,       [],             "")
-call s:Style("vimFuncSID",     s:text,        [],             "")
+call s:Style("vimFuncSID",     [],            [],             "")
 
 " }}}
 
