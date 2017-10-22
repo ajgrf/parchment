@@ -49,10 +49,8 @@ endfunction
 
 " Standard Syntax Highlighting Groups {{{
 
-execute "highlight Normal ctermfg=NONE ctermbg=NONE cterm=NONE guifg=" .
-  \ s:black[1] . " guibg=" . s:pale_yellow[1] . " gui=NONE"
-
 ""           HIGHLIGHT GROUP   TEXT           BACKGROUND      ATTRIBUTES
+call s:Style("Normal",         s:black,       s:pale_yellow,  "")
 call s:Style("Constant",       [],            [],             "")
 call s:Style("Identifier",     [],            [],             "")
 call s:Style("Ignore",         [],            [],             "")
