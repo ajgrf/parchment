@@ -121,6 +121,7 @@ call s:Style("vimFuncSID",     [],            [],             "")
 call s:Style("NonText",        s:cyan,        s:pale_cyan,    "")
 call s:Style("EndOfBuffer",    [],            [],             "bold")
 call s:Style("SpecialKey",     s:cyan,        s:pale_cyan,    "")
+call s:Style("Conceal",        [],            [],             "")
 call s:Style("LineNr",         [],            s:pale_gray,    "")
 call s:Style("CursorLineNr",   [],            s:pale_gray,    "")
 call s:Style("ErrorMsg",       s:pale_yellow, s:red,          "bold")
@@ -161,7 +162,5 @@ call s:Style("SpellBad",       s:red,         [],             "undercurl")
 call s:Style("SpellCap",       s:green,       [],             "undercurl")
 call s:Style("SpellRare",      s:green,       [],             "undercurl")
 call s:Style("SpellLocal",     s:green,       [],             "undercurl")
-
-" Purposefully left unset: Conceal
 
 " }}}
