@@ -125,6 +125,8 @@ call s:Style("shCommandSub",   [],            [],             "")
 call s:Style("shDeref",        s:magenta,     [],             "")
 call s:Style("shEcho",         s:black,       [],             "")
 call s:Style("shQuote",        s:green,       [],             "")
+call s:Style("tmuxKey",        [],            [],             "")
+call s:Style("tmuxFormatString", s:magenta,   [],             "")
 call s:Style("vimFuncSID",     [],            [],             "")
 
 " }}}
