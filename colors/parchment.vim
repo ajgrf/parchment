@@ -177,4 +177,9 @@ call s:Style("SpellCap",       s:green,       [],             "undercurl")
 call s:Style("SpellRare",      s:green,       [],             "undercurl")
 call s:Style("SpellLocal",     s:green,       [],             "undercurl")
 
+if has('nvim')
+      hi! link TermCursor Cursor
+      hi TermCursorNC ctermfg=235 ctermbg=242 guifg=#002b36 guibg=#586e75 guisp=NONE cterm=NONE gui=NONE
+endif
+
 " }}}
