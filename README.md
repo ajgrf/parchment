@@ -1,8 +1,9 @@
 # Parchment
 
-Parchment is a vim colorscheme inspired by Acme and Leuven.  You might like it
-if you prefer light colorschemes but think black-on-white is too hard on your
-eyes, or if you find most colorschemes too busy.
+Parchment is an editor theme for Vim and Emacs, inspired by Acme and
+Leuven.  You might like it if you prefer light colorschemes but think
+black-on-white is too hard on your eyes, or if you find most
+colorschemes too busy.
 
 ## Screenshots
 
