@@ -43,7 +43,7 @@ If foreground or background are nil then they will be skipped."
                forms))))
     `(custom-theme-set-faces
       ',theme
-      ,@forms)))
+      ,@(nreverse forms))))
 
 (let ((black   "#000000") (pale-gray    "#eaeaea")
       (red     "#880000") (pale-red     "#ffeaea")
@@ -91,9 +91,7 @@ If foreground or background are nil then they will be skipped."
   (custom-theme-set-variables 'parchment
    ;; shell-mode colors
    `(ansi-color-names-vector
-     [,black ,red ,green ,brown ,blue ,magenta ,cyan ,beige])
-   `(ansi-color-faces-vector
-     [default default default italic underline success warning error])))
+     [,black ,red ,green ,brown ,blue ,magenta ,cyan ,beige])))
 
 ;;;###autoload
 (when (and (boundp 'custom-theme-load-path)
