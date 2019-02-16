@@ -118,7 +118,7 @@ If foreground or background are nil then they will be skipped."
     (font-lock-builtin-face     blue         nil)
     (font-lock-preprocessor-face magenta     nil)
     (font-lock-string-face      green        nil)
-    (font-lock-doc-face         blue         nil)
+    (font-lock-doc-face         green        nil)
 
     (org-document-title         black        nil          :weight bold :height 1.8)
     (org-document-info          nil          nil)
