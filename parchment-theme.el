@@ -93,8 +93,11 @@ If foreground or background are nil then they will be skipped."
     (fringe                     black        pale-gray)
     (header-line                nil          pale-cyan    :box t)
     (linum                      black        pale-gray)
-    (mode-line                  pale-yellow  blue         :box ,black)
+    (mode-line                  pale-blue    blue         :box ,black)
     (mode-line-inactive         nil          pale-gray    :box t)
+    (mode-line-highlight        nil          yellow)
+    (mode-line-emphasis         pale-yellow  nil          :weight bold :distant-foreground ,black)
+    (mode-line-buffer-id        pale-yellow  nil          :weight bold :distant-foreground ,black)
 
     (region                     nil          yellow)
     (hl-line                    nil          beige)
