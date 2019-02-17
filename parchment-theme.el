@@ -82,7 +82,7 @@ If foreground or background are nil then they will be skipped."
     (italic                     nil          nil          :slant italic)
     (bold-italic                nil          nil          :weight bold :slant italic)
     (underline                  nil          nil          :underline t)
-    (shadow                     brown        nil)
+    (shadow                     cyan         nil)
     (link                       cyan         nil          :underline t)
     (link-visited               magenta      nil          :underline t)
     (error                      red          nil)
