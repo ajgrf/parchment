@@ -142,6 +142,10 @@ If foreground or background are nil then they will be skipped."
     (markdown-reference-face    nil          nil)
     (markdown-table-face        green        nil          :inherit markdown-code-face)
     (markdown-url-face          blue         nil)
+    (message-header-name        blue         nil)
+    (message-header-other       nil          nil)
+    (message-header-to          nil          nil)
+    (message-header-subject     black        pale-gray    :weight bold :overline t)
     (org-document-title         black        nil          :weight bold :height 1.8)
     (org-document-info          nil          nil)
     (org-document-info-keyword  cyan         pale-cyan)
@@ -221,6 +225,7 @@ If foreground or background are nil then they will be skipped."
     (magit-section-heading      brown        nil          :weight bold)
     (magit-section-highlight    nil          pale-gray)
     (magit-tag                  brown        nil)
+    (mu4e-modeline-face         pale-green   nil          :weight bold :distant-foreground ,green)
     (which-key-key-face         magenta      nil))
 
   (custom-theme-set-variables 'parchment
