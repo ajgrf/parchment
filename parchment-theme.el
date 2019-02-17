@@ -226,6 +226,7 @@ If foreground or background are nil then they will be skipped."
     (magit-section-highlight    nil          pale-gray)
     (magit-tag                  brown        nil)
     (mu4e-modeline-face         pale-green   nil          :weight bold :distant-foreground ,green)
+    (pass-mode-directory-face   blue         nil          :weight bold)
     (which-key-key-face         magenta      nil))
 
   (custom-theme-set-variables 'parchment
