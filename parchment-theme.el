@@ -146,6 +146,7 @@ If foreground or background are nil then they will be skipped."
     (sh-quoted-exec             nil          nil)
     (vimrc-number               nil          nil)
 
+    (comint-highlight-input     blue         nil          :weight bold)
     (comint-highlight-prompt    blue         nil          :weight bold)
     (dired-directory            blue         nil)
     (magit-section-heading      brown        nil          :weight bold)
