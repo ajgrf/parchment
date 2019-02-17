@@ -157,6 +157,7 @@ If foreground or background are nil then they will be skipped."
     (org-level-6                cyan         nil          :weight bold :slant italic)
     (org-level-7                green        nil          :weight bold :slant italic)
     (org-level-8                brown        nil          :weight bold :slant italic)
+    (org-table                  green        pale-green)
     (org-todo                   red          pale-red     :weight bold :box t)
     (org-done                   cyan         pale-cyan    :weight bold :box t)
     (sh-quoted-exec             nil          nil)
