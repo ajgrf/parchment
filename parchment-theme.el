@@ -92,7 +92,7 @@ If foreground or background are nil then they will be skipped."
     (cursor                     nil          black)
     (fringe                     black        pale-gray)
     (header-line                nil          pale-cyan    :box t)
-    (linum                      black        pale-gray)
+    (linum                      black        pale-gray    :inherit fixed-pitch)
     (minibuffer-prompt          blue         nil)
     (mode-line                  pale-blue    blue         :box ,black)
     (mode-line-inactive         nil          pale-gray    :box t)
