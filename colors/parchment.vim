@@ -229,3 +229,29 @@ call s:Style('SpellRare',      s:green,       [],             'undercurl')
 call s:Style('SpellLocal',     s:green,       [],             'undercurl')
 
 " }}}
+
+" Terminal Colors {{{
+
+let g:terminal_ansi_colors = [
+  \s:black[1], s:red[1], s:green[1], s:brown[1], s:blue[1], s:magenta[1], s:cyan[1], s:beige[1],
+  \s:black[1], s:red[1], s:green[1], s:brown[1], s:blue[1], s:magenta[1], s:cyan[1], s:pale_yellow[1]
+  \]
+
+let g:terminal_color_0 = s:black[1]
+let g:terminal_color_1 = s:red[1]
+let g:terminal_color_2 = s:green[1]
+let g:terminal_color_3 = s:brown[1]
+let g:terminal_color_4 = s:blue[1]
+let g:terminal_color_5 = s:magenta[1]
+let g:terminal_color_6 = s:cyan[1]
+let g:terminal_color_7 = s:beige[1]
+let g:terminal_color_8 = s:black[1]
+let g:terminal_color_9 = s:red[1]
+let g:terminal_color_10 = s:green[1]
+let g:terminal_color_11 = s:brown[1]
+let g:terminal_color_12 = s:blue[1]
+let g:terminal_color_13 = s:magenta[1]
+let g:terminal_color_14 = s:cyan[1]
+let g:terminal_color_15 = s:pale_yellow[1]
+
+" }}}
