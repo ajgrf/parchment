@@ -118,7 +118,7 @@ If foreground or background are nil then they will be skipped."
     (font-lock-variable-name-face nil        nil)
     (font-lock-keyword-face     nil          nil)
     (font-lock-comment-face     brown        nil          :slant italic)
-    (font-lock-type-face        nil          nil)
+    (font-lock-type-face        blue         nil)
     (font-lock-constant-face    nil          nil)
     (font-lock-builtin-face     blue         nil)
     (font-lock-preprocessor-face magenta     nil)
