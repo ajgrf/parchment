@@ -256,6 +256,14 @@ If foreground or background are nil then they will be skipped."
     (magit-tag                  brown        nil)
     (mu4e-modeline-face         pale-green   nil          :weight bold :distant-foreground ,green)
     (pass-mode-directory-face   blue         nil          :weight bold)
+    (term-color-black           black        pale-gray)
+    (term-color-red             red          pale-red)
+    (term-color-green           green        pale-green)
+    (term-color-yellow          brown        yellow)
+    (term-color-blue            blue         pale-blue)
+    (term-color-magenta         magenta      pale-magenta)
+    (term-color-cyan            cyan         pale-cyan)
+    (term-color-white           beige        pale-yellow)
     (which-key-key-face         magenta      nil))
 
   (custom-theme-set-variables 'parchment
