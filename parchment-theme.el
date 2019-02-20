@@ -25,21 +25,26 @@ Set to non-nil if you're using a matching parchment terminal theme.")
 
 (defmacro style-theme (theme &rest styles)
   "Apply a list of face styles associated with theme THEME.
-Wraps `custom-theme-set-faces' with a nice compact table-like syntax.
+Wraps `custom-theme-set-faces' with a compact syntax.
 
-Each STYLE should be a list of the form:
+Each STYLE should be one of the following forms:
 
   (FACE FOREGROUND BACKGROUND [ATTRIBUTES])
+  (FACE SPEC)
 
-If foreground or background are nil then they will be skipped."
+SPEC is passed directly to custom-theme-set-faces. If FOREGROUND or
+BACKGROUND are nil then they will be skipped."
   (declare (indent 1))
   (let (forms)
     (while styles
       (pcase (pop styles)
         (`(,face ,fg ,bg . ,attrs)
-         (push `(,'\` (,face ((t (,@(when fg `(:foreground (,'\, ,fg)))
-                                  ,@(when bg `(:background (,'\, ,bg)))
-                                  ,@attrs)))))
+         (push `(,'\` (,face ((t ,@(when fg `(:foreground (,'\, ,fg)))
+                                 ,@(when bg `(:background (,'\, ,bg)))
+                                 ,@attrs))))
+               forms))
+        (`(,face ((,class . ,attrs) . ,rest))
+         (push `(,'\` (,face ((,class ,@attrs) ,@rest)))
                forms))))
     `(custom-theme-set-faces
       ',theme
