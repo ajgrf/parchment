@@ -199,7 +199,10 @@ If foreground or background are nil then they will be skipped."
     ;; package interface elements
     (comint-highlight-input     blue         nil          :weight bold)
     (comint-highlight-prompt    blue         nil          :weight bold)
-    (dired-directory            blue         nil)
+    (dired-directory            blue         nil          :weight bold)
+    (dired-header               blue         nil          :weight bold)
+    (dired-ignored              brown        nil)
+    (dired-symlink              cyan         nil          :weight bold)
     (elfeed-search-date-face    blue         nil)
     (elfeed-search-feed-face    brown        nil)
     (elfeed-search-tag-face     green        nil)
