@@ -119,8 +119,9 @@ BACKGROUND are nil then they will be skipped."
     (region                     nil          yellow)
     (show-paren-match           nil          pale-blue)
     (show-paren-mismatch        pale-yellow  red)
-    (whitespace-line            red          pale-red)
-    (whitespace-trailing        red          pale-red)
+    (trailing-whitespace        red          pale-red)
+    (whitespace-line            nil          nil          :inherit trailing-whitespace)
+    (whitespace-trailing        nil          nil          :inherit trailing-whitespace)
 
     ;; generic syntax highlighting
     (font-lock-warning-face     red          nil)
