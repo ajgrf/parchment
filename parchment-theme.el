@@ -87,7 +87,8 @@ BACKGROUND are nil then they will be skipped."
     (italic                     nil          nil          :slant italic)
     (bold-italic                nil          nil          :weight bold :slant italic)
     (underline                  nil          nil          :underline t)
-    (shadow                     cyan         nil)
+    (shadow ((((type tty)) :foreground ,cyan
+              (t :foreground "#808075"))))
     (link                       blue         nil          :underline t)
     (link-visited               magenta      nil          :underline t)
     (error                      red          nil)
@@ -274,7 +275,7 @@ BACKGROUND are nil then they will be skipped."
     (magit-diff-removed-highlight nil        nil          :inherit magit-diff-removed)
     (magit-diffstat-added       green        nil)
     (magit-diffstat-removed     red          nil)
-    (magit-dimmed               cyan         nil)
+    (magit-dimmed               nil          nil          :inherit shadow)
     (magit-hash                 cyan         nil)
     (magit-header-line          nil          nil          :weight bold)
     (magit-keyword              blue         nil)
