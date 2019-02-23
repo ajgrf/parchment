@@ -123,6 +123,7 @@ BACKGROUND are nil then they will be skipped."
     (mode-line-emphasis ((((type tty)) :weight bold)
                          (t :foreground ,pale-yellow :distant-foreground ,black :weight bold)))
     (region                     nil          yellow)
+    (secondary-selection        nil          yellow)
     (show-paren-match           nil          pale-blue)
     (show-paren-mismatch        pale-yellow  red)
     (trailing-whitespace        red          pale-red)
