@@ -87,8 +87,8 @@ BACKGROUND are nil then they will be skipped."
     (italic                     nil          nil          :slant italic)
     (bold-italic                nil          nil          :weight bold :slant italic)
     (underline                  nil          nil          :underline t)
-    (shadow ((((type tty)) :foreground ,cyan
-              (t :foreground "#808075"))))
+    (shadow ((((type tty)) :foreground ,cyan)
+              (t :foreground "#808075")))
     (link                       blue         nil          :underline t)
     (link-visited               magenta      nil          :underline t)
     (error                      red          nil)
@@ -98,6 +98,10 @@ BACKGROUND are nil then they will be skipped."
     ;; standard interface elements
     (cursor                     nil          black)
     (fringe                     black        pale-gray)
+    (flyspell-incorrect ((((type tty)) :foreground ,red :underline t)
+                          (t :underline (:color "red" :style wave))))
+    (flyspell-duplicate ((((type tty)) :foreground ,green :underline t)
+                          (t :underline (:color ,green :style wave))))
     (header-line                nil          pale-cyan    :box t)
     (highlight                  nil          pale-blue)
     (hl-line                    nil          beige)
