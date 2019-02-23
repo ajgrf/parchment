@@ -127,7 +127,16 @@ BACKGROUND are nil then they will be skipped."
     (show-paren-match           nil          pale-blue)
     (show-paren-mismatch        pale-yellow  red)
     (trailing-whitespace        red          pale-red)
+    (whitespace-big-indent      pale-red     red)
+    (whitespace-empty           nil          nil          :inherit whitespace-indentation)
+    (whitespace-hspace          nil          beige        :inherit whitespace-space)
+    (whitespace-indentation     red          yellow)
     (whitespace-line            nil          nil          :inherit trailing-whitespace)
+    (whitespace-newline         nil          nil          :inherit shadow)
+    (whitespace-space-after-tab nil          nil          :inherit whitespace-indentation)
+    (whitespace-space-before-tab pale-red    red)
+    (whitespace-space           nil          nil          :inherit shadow)
+    (whitespace-tab             nil          nil          :inherit shadow)
     (whitespace-trailing        nil          nil          :inherit trailing-whitespace)
 
     ;; generic syntax highlighting
