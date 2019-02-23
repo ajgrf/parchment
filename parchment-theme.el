@@ -321,7 +321,11 @@ BACKGROUND are nil then they will be skipped."
     (term-color-magenta         magenta      pale-magenta)
     (term-color-cyan            cyan         pale-cyan)
     (term-color-white           beige        pale-yellow)
-    (which-key-key-face         magenta      nil))
+    (which-key-docstring-face   nil          nil          :inherit font-lock-doc-face)
+    (which-key-group-description-face blue   nil)
+    (which-key-key-face         magenta      nil)
+    (which-key-note-face        nil          nil          :inherit font-lock-comment-face)
+    (which-key-separator-face   nil          nil))
 
   (custom-theme-set-variables 'parchment
    ;; shell-mode colors
