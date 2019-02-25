@@ -225,6 +225,12 @@ BACKGROUND are nil then they will be skipped."
     (vimrc-number               nil          nil)
 
     ;; package interface elements
+    (calendar-month-header      nil          nil          :weight bold)
+    (calendar-today             nil          beige        :weight bold :box ,brown)
+    (calendar-weekday-header    blue         nil          :weight bold)
+    (calendar-weekend-header    nil          nil          :weight bold)
+    (diary                      magenta      nil)
+    (holiday                    nil          pale-red     :box ,red)
     (company-scrollbar-bg       nil          nil          :inherit company-tooltip)
     (company-scrollbar-fg       nil          cyan)
     (company-tooltip            nil          pale-cyan)
