@@ -153,6 +153,18 @@ BACKGROUND are nil then they will be skipped."
     (font-lock-doc-face         green        nil)
 
     ;; filetype syntax highlighting
+    (diff-added                 green        pale-green)
+    (diff-changed               blue         pale-blue)
+    (diff-context               nil          nil)
+    (diff-file-header           nil          nil          :weight bold :inherit diff-header)
+    (diff-header                black        pale-gray)
+    (diff-hunk-header           magenta      pale-magenta)
+    (diff-refine-added ((((type tty)) :inherit diff-added :underline t)
+                        (t :inherit diff-added :box t)))
+    (diff-refine-changed        nil          pale-blue)
+    (diff-refine-removed ((((type tty)) :inherit diff-removed :underline t)
+                          (t :inherit diff-removed :box t)))
+    (diff-removed               red          pale-red)
     (ledger-font-posting-date-face blue      nil)
     (ledger-occur-xact-face     nil          beige)
     (markdown-header-face-1     black        pale-gray    :weight bold :height 1.3 :overline t)
