@@ -165,6 +165,7 @@ BACKGROUND are nil then they will be skipped."
     (diff-refine-removed ((((type tty)) :inherit diff-removed :underline t)
                           (t :inherit diff-removed :box t)))
     (diff-removed               red          pale-red)
+    (ledger-font-pending-face   magenta      nil          :slant italic)
     (ledger-font-posting-date-face blue      nil)
     (ledger-occur-xact-face     nil          beige)
     (markdown-header-face-1     black        pale-gray    :weight bold :height 1.3 :overline t)
