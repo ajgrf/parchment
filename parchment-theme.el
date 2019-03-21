@@ -115,7 +115,7 @@ BACKGROUND are nil then they will be skipped."
     (tty-menu-disabled-face     cyan         pale-cyan)
     (tty-menu-enabled-face      nil          pale-cyan)
     (tty-menu-selected-face     pale-yellow  cyan         :weight bold)
-    (minibuffer-prompt          blue         nil)
+    (minibuffer-prompt          nil          pale-blue    :weight bold)
     (mode-line                  pale-blue    blue         :box ,black)
     (mode-line-inactive         nil          pale-gray    :box t)
     (mode-line-highlight        black        yellow)
