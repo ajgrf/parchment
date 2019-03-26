@@ -273,7 +273,7 @@ BACKGROUND are nil then they will be skipped."
     (company-tooltip-common     nil          nil          :weight bold)
     (company-tooltip-annotation cyan         nil)
     (company-tooltip-annotation-selection pale-yellow nil)
-    (company-tooltip-selection  pale-yellow  cyan         :weight bold)
+    (company-tooltip-selection  pale-yellow  cyan)
     (custom-button-pressed-unraised magenta  nil          :underline t)
     (custom-changed             nil          nil          :inverse-video t :inherit custom-set)
     (custom-comment             black        pale-gray)
