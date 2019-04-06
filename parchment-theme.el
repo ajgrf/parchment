@@ -312,6 +312,7 @@ BACKGROUND are nil then they will be skipped."
     (dired-header               blue         nil          :weight bold)
     (dired-ignored              brown        nil)
     (dired-symlink              cyan         nil          :weight bold)
+    (eldoc-highlight-function-argument blue  nil          :weight bold :underline t)
     (elfeed-search-date-face    blue         nil)
     (elfeed-search-feed-face    brown        nil)
     (elfeed-search-tag-face     green        nil)
