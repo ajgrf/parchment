@@ -97,6 +97,14 @@ BACKGROUND are nil then they will be skipped."
 
     ;; standard interface elements
     (cursor                     nil          black)
+    (compilation-error          ((((type tty)) :foreground ,red)
+                                 (t :foreground ,pale-red :distant-foreground ,red)))
+    (compilation-info           ((((type tty)) :foreground ,green)
+                                 (t :foreground ,pale-green :distant-foreground ,green)))
+    (compilation-mode-line-exit nil          nil          :inherit compilation-info :weight bold)
+    (compilation-mode-line-fail nil          nil          :inherit compilation-error :weight bold)
+    (compilation-mode-line-run  nil          nil          :inherit compilation-error)
+    (compilation-warning        nil          nil          :inherit compilation-error)
     (fringe                     black        pale-gray)
     (flyspell-incorrect ((((type tty)) :foreground ,red :underline t)
                           (t :underline (:color "red" :style wave))))
