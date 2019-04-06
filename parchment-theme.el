@@ -1,4 +1,9 @@
-;;; -*- lexical-binding: t -*-
+;;; parchment-theme.el --- Light editor theme inspired by Acme and Leuven
+
+;; Author: Alex Griffin <a@ajgrf.com>
+;; URL: https://github.com/ajgrf/parchment
+;; Version: 0.2.0-pre
+;; Keywords: color theme
 
 ;; Copyright © 2019 Alex Griffin <a@ajgrf.com>
 ;;
@@ -16,6 +21,14 @@
 ;; ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT
 ;; OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 
+;;; Commentary:
+
+;; Parchment is a light theme inspired by the Leuven theme and the
+;; Acme text editor. It's meant to be more subdued and easier on the
+;; eyes than black-on-white, and less "busy" than most colorschemes.
+
+;;; Code:
+
 (deftheme parchment
   "A light colorscheme inspired by Acme and Leuven.")
 
@@ -24,7 +37,7 @@
 Set to non-nil if you're using a matching parchment terminal theme.")
 
 (defmacro style-theme (theme &rest styles)
-  "Apply a list of face styles associated with theme THEME.
+  "Apply a list of face STYLES associated with theme THEME.
 Wraps `custom-theme-set-faces' with a compact syntax.
 
 Each STYLE should be one of the following forms:
@@ -32,7 +45,7 @@ Each STYLE should be one of the following forms:
   (FACE FOREGROUND BACKGROUND [ATTRIBUTES])
   (FACE SPEC)
 
-SPEC is passed directly to custom-theme-set-faces. If FOREGROUND or
+SPEC is passed directly to `custom-theme-set-faces'.  If FOREGROUND or
 BACKGROUND are nil then they will be skipped."
   (declare (indent 1))
   (let (forms)
@@ -49,6 +62,8 @@ BACKGROUND are nil then they will be skipped."
     `(custom-theme-set-faces
       ',theme
       ,@(nreverse forms))))
+
+(declare-function parchment-modify-tty-colors "parchment-theme.el")
 
 (let ((black   "#000000") (pale-gray    "#eaeaea")
       (red     "#880000") (pale-red     "#ffeaea")
@@ -529,3 +544,9 @@ BACKGROUND are nil then they will be skipped."
                (file-name-as-directory (file-name-directory load-file-name))))
 
 (provide-theme 'parchment)
+
+;; Local Variables:
+;; no-byte-compile: t
+;; End:
+
+;;; parchment-theme.el ends here
