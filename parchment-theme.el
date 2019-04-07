@@ -4,7 +4,6 @@
 ;; URL: https://github.com/ajgrf/parchment
 ;; Version: 0.2.1-pre
 ;; Package-Requires: ((emacs "24"))
-;; Keywords: color theme
 
 ;; Copyright © 2019 Alex Griffin <a@ajgrf.com>
 ;;

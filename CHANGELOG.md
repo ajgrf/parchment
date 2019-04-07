@@ -3,6 +3,7 @@
 ## Unreleased
 ### Fixed
 - Explicitly depend on Emacs 24.
+- Make `package-lint` happier with the Emacs theme.
 
 ## 0.2.0 - 2019-04-06
 ### Added
