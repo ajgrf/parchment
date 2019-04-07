@@ -1,6 +1,6 @@
 # Changelog
 
-## Unreleased
+## 0.2.0 - 2019-04-06
 ### Added
 - New Emacs theme.
 - Vim styles for git, tmux, org, email, roff, reStructuredText.

@@ -2,7 +2,7 @@
 
 ;; Author: Alex Griffin <a@ajgrf.com>
 ;; URL: https://github.com/ajgrf/parchment
-;; Version: 0.2.0-pre
+;; Version: 0.2.0
 ;; Keywords: color theme
 
 ;; Copyright © 2019 Alex Griffin <a@ajgrf.com>
