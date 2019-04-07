@@ -351,6 +351,8 @@ BACKGROUND are nil then they will be skipped."
     (eshell-ls-symlink          cyan         nil          :weight bold)
     (eshell-ls-unreadable       red          nil)
     (eshell-prompt              blue         nil          :weight bold)
+    (evil-ex-info               red          nil          :slant italic)
+    (evil-ex-substitute-replacement red      nil          :underline t)
     (evil-mc-cursor-default-face pale-yellow blue)
     (evil-mc-cursor-bar-face    nil          blue         :height 1)
     (evil-mc-cursor-hbar-face   nil          nil          :underline (:color ,blue :style line))

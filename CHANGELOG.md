@@ -1,6 +1,9 @@
 # Changelog
 
 ## Unreleased
+### Added
+- Style evil-ex messages.
+
 ### Fixed
 - Explicitly depend on Emacs 24.
 - Make `package-lint` happier with the Emacs theme.
