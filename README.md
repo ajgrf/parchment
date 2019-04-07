@@ -7,11 +7,26 @@ colorschemes too busy.
 
 ## Screenshots
 
-![Go Screenshot](./img/golang.png "Go Screenshot")
+![Emacs Org Screenshot](./img/emacs-org.png "Emacs Org Screenshot")
 
-![Markdown Screenshot](./img/markdown.png "Markdown Screenshot")
+![Vim Go Screenshot](./img/vim-go.png "Vim Go Screenshot")
 
 ## Installation
+
+### Emacs
+
+To manually install the `parchment` theme for Emacs, first clone the
+repository to your local system:
+
+    mkdir -p ~/.emacs.d/themes
+    git clone https://github.com/ajgrf/parchment ~/.emacs.d/themes/parchment
+
+Then add the following to your `init.el` or `.emacs` file:
+
+    (add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
+    (load-theme 'parchment t)
+
+### Vim
 
 Parchment can be installed in the same way as most other vim plugins and
 colorschemes.  If you don't have a preferred method of installing vim plugins,
@@ -20,15 +35,7 @@ just clone this repo into your bundle directory:
 
     git clone https://github.com/ajgrf/parchment ~/.vim/bundle/parchment
 
-## Terminal Vim
-
-If your terminal supports true colors, the easiest way to get Parchment working
-is to set 'termguicolors' in your vimrc.  You can set this option per terminal
-by inspecting the TERM environment variable.  For example:
-
-    if $TERM ==# "xterm-256color"
-      set termguicolors
-    endif
+## Terminal Colors
 
 If your terminal does not support true colors, you will need to use a matching
 terminal theme, and ensure that it does not use bright colors for bold text.
@@ -57,9 +64,9 @@ The following X resources accomplish that for xterm and urxvt:
     URxvt*intensityStyles: false
     XTerm*boldColors:      false
 
-[1]: https://github.com/tpope/vim-pathogen
-
 ## License
 
 The files in this repository are licensed under a permissive ISC license.  See
 the LICENSE file for more details.
+
+[1]: https://github.com/tpope/vim-pathogen
