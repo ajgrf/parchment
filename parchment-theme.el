@@ -1,4 +1,4 @@
-;;; parchment-theme.el --- Light editor theme inspired by Acme and Leuven
+;;; parchment-theme.el --- Light theme inspired by Acme and Leuven -*- lexical-binding: t -*-
 
 ;; Author: Alex Griffin <a@ajgrf.com>
 ;; URL: https://github.com/ajgrf/parchment
