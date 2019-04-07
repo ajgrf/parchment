@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased
+### Fixed
+- Explicitly depend on Emacs 24.
+
 ## 0.2.0 - 2019-04-06
 ### Added
 - New Emacs theme.
