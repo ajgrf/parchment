@@ -262,6 +262,7 @@ BACKGROUND are nil then they will be skipped."
     (org-time-grid              nil          nil          :inherit shadow)
     (org-todo                   red          pale-red     :weight bold :box t)
     (org-done                   nil          pale-gray    :inherit shadow :weight bold :box t)
+    (org-upcoming-deadline      red          nil)
     (org-habit-alert-face       yellow       brown        :box ,brown)
     (org-habit-alert-future-face black       yellow       :box t :strike-through t)
     (org-habit-clear-face       pale-blue    blue         :box ,blue)
