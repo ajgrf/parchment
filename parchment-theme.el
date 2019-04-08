@@ -357,6 +357,8 @@ BACKGROUND are nil then they will be skipped."
     (evil-mc-cursor-default-face pale-yellow blue)
     (evil-mc-cursor-bar-face    nil          blue         :height 1)
     (evil-mc-cursor-hbar-face   nil          nil          :underline (:color ,blue :style line))
+    (eww-invalid-certificate    red          nil          :inherit eww-valid-certificate)
+    (eww-valid-certificate      nil          nil          :weight bold)
     (flycheck-fringe-error      red          pale-red)
     (flycheck-fringe-info       green        pale-green)
     (flycheck-fringe-warning    red          pale-red)
