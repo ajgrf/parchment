@@ -2,7 +2,7 @@
 
 ## Unreleased
 ### Added
-- Style evil-ex messages.
+- A few Emacs styles for `evil`, `org`, and `eww`.
 
 ### Fixed
 - Explicitly depend on Emacs 24.
