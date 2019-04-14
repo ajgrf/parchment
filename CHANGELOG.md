@@ -1,5 +1,7 @@
 # Changelog
 
+## Unreleased
+
 ## 0.2.1 - 2019-04-08
 ### Added
 - A few Emacs styles for `evil`, `org`, and `eww`.
