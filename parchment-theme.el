@@ -300,6 +300,7 @@ BACKGROUND are nil then they will be skipped."
     (rst-level-4                brown        nil          :weight bold)
     (rst-level-5                magenta      nil          :weight bold)
     (rst-level-6                cyan         nil          :weight bold :slant italic)
+    (sh-heredoc                 green        nil          :inherit font-lock-string-face)
     (sh-quoted-exec             nil          nil)
     (vimrc-number               nil          nil)
 
