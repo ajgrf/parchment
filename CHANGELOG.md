@@ -1,6 +1,11 @@
 # Changelog
 
 ## Unreleased
+### Added
+- Emacs styles for `geiser`, `guix`, and shell `heredocs`.
+
+### Changed
+- The `style-theme` macro is now `parchment-style-theme`.
 
 ## 0.2.1 - 2019-04-08
 ### Added
