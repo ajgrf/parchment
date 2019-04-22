@@ -15,7 +15,24 @@ colorschemes too busy.
 
 *** Emacs
 
-To manually install the =parchment= theme for Emacs, first clone the
+**** MELPA
+
+After [[https://melpa.org/#/getting-started][enabling installation]] of MELPA
+packages, install =parchment-theme= with ~M-x package-install~. Load
+it using ~load-theme~.
+
+Or if you are using =use-package= (strongly recommended), simply add the
+following to your =init.el=:
+
+#+BEGIN_SRC emacs-lisp
+  (use-package parchment-theme
+    :ensure t
+    :config (load-theme 'parchment t))
+#+END_SRC
+
+**** Manual
+
+To install =parchment-theme= for Emacs manually instead, first clone the
 repository to your local system:
 
 #+BEGIN_SRC sh
