@@ -1,6 +1,6 @@
 # Changelog
 
-## Unreleased
+## 0.2.2 - 2019-04-22
 ### Added
 - Emacs styles for `geiser`, `guix`, and shell `heredocs`.
 
