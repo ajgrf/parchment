@@ -36,7 +36,7 @@
   "Whether to redefine the terminal colors that Emacs knows about.
 Set to non-nil if you're using a matching parchment terminal theme.")
 
-(defmacro style-theme (theme &rest styles)
+(defmacro parchment-style-theme (&rest styles)
   "Apply a list of face STYLES associated with theme THEME.
 Wraps `custom-theme-set-faces' with a compact syntax.
 
@@ -60,7 +60,7 @@ BACKGROUND are nil then they will be skipped."
          (push `(,'\` (,face ((,class ,@attrs) ,@rest)))
                forms))))
     `(custom-theme-set-faces
-      ',theme
+      'parchment
       ,@(nreverse forms))))
 
 (declare-function parchment-modify-tty-colors "parchment-theme.el")
@@ -95,7 +95,7 @@ BACKGROUND are nil then they will be skipped."
   (when parchment-want-modify-tty-colors
     (add-hook 'tty-setup-hook #'parchment-modify-tty-colors))
 
-  (style-theme parchment
+  (parchment-style-theme
     ;; FACE                     FOREGROUND   BACKGROUND   ATTRIBUTES
     (default                    black        pale-yellow)
     (bold                       nil          nil          :weight bold)
