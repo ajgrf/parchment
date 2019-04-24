@@ -259,6 +259,8 @@ BACKGROUND are nil then they will be skipped."
     (org-scheduled-previously   red          nil)
     (org-special-keyword        cyan         pale-cyan    :weight bold)
     (org-tag                    nil          nil          :slant italic :inherit shadow)
+    (org-mode-line-clock        nil          nil)
+    (org-mode-line-clock-overrun pale-yellow red)
     (org-time-grid              nil          nil          :inherit shadow)
     (org-todo                   red          pale-red     :weight bold :box t)
     (org-done                   nil          pale-gray    :inherit shadow :weight bold :box t)
