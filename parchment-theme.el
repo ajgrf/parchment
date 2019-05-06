@@ -273,6 +273,9 @@ BACKGROUND are nil then they will be skipped."
     (org-habit-overdue-future-face red       pale-red     :box t)
     (org-habit-ready-face       pale-green   green        :box ,green)
     (org-habit-ready-future-face green       pale-green   :box t)
+    (org-drill-hidden-cloze-face pale-yellow cyan)
+    (org-drill-visible-cloze-face cyan       nil)
+    (org-drill-visible-cloze-hint-face magenta nil)
     (outline-1                  black        pale-gray    :weight bold :height 1.3 :overline t)
     (outline-2                  blue         pale-cyan    :weight bold :overline t)
     (outline-3                  green        pale-green   :weight bold :overline t)
@@ -566,7 +569,11 @@ BACKGROUND are nil then they will be skipped."
   (custom-theme-set-variables 'parchment
    ;; shell-mode colors
    `(ansi-color-names-vector
-     [,black ,red ,green ,brown ,blue ,magenta ,cyan ,beige])))
+     [,black ,red ,green ,brown ,blue ,magenta ,cyan ,beige])
+   `(org-drill-done-count-color ,brown)
+   `(org-drill-failed-count-color ,red)
+   `(org-drill-mature-count-color ,green)
+   `(org-drill-new-count-color ,blue)))
 
 ;;;###autoload
 (when (and (boundp 'custom-theme-load-path)
