@@ -495,6 +495,7 @@ BACKGROUND are nil then they will be skipped."
     (magit-log-date             blue         nil)
     (magit-log-graph            cyan         nil)
     (magit-mode-line-process-error pale-red  nil          :distant-foreground ,red :weight bold)
+    (magit-popup-argument       blue         nil)
     (magit-popup-key            magenta      nil)
     (magit-process-ng           red          nil          :weight bold)
     (magit-process-ok           green        nil          :weight bold)
