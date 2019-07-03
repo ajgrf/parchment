@@ -97,8 +97,17 @@ BACKGROUND are nil then they will be skipped."
     (tty-color-define "brightcyan"    14 (tty-color-standard-values pale-cyan))
     (tty-color-define "brightwhite"   15 (tty-color-standard-values pale-yellow)))
 
+  ;; Style HTML tags
+  (defun parchment-modify-sgml-tags ()
+    (when (member 'parchment custom-enabled-themes)
+      (face-remap-add-relative 'font-lock-function-name-face
+                               `(:foreground ,magenta))))
+
   (when parchment-want-modify-tty-colors
     (add-hook 'tty-setup-hook #'parchment-modify-tty-colors))
+
+  (when parchment-add-mode-hooks
+    (add-hook 'sgml-mode-hook 'parchment-modify-sgml-tags))
 
   (parchment-style-theme
     ;; FACE                     FOREGROUND   BACKGROUND   ATTRIBUTES
