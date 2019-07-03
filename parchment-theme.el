@@ -36,6 +36,11 @@
   "Whether to redefine the terminal colors that Emacs knows about.
 Set to non-nil if you're using a matching parchment terminal theme.")
 
+(defvar parchment-add-mode-hooks nil
+  "Whether to add mode hooks to modify faces per major mode.
+Allows better fine-tuning of styles, but may be too intrusive if you
+switch themes often.")
+
 (defmacro parchment-style-theme (&rest styles)
   "Apply a list of face STYLES associated with theme THEME.
 Wraps `custom-theme-set-faces' with a compact syntax.
