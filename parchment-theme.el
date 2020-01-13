@@ -253,6 +253,7 @@ BACKGROUND are nil then they will be skipped."
     (org-document-title         black        nil          :weight bold :height 1.8)
     (org-document-info          nil          nil)
     (org-document-info-keyword  cyan         pale-cyan)
+    (org-drawer                 cyan         pale-cyan)
     (org-meta-line              cyan         pale-cyan)
     (org-block-begin-line ((((type tty)) :foreground ,black :background ,pale-gray :underline t)
                             (t :foreground "#55554e" :background ,pale-gray :underline t :box "#ccccbb")))
