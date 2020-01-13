@@ -199,6 +199,8 @@ BACKGROUND are nil then they will be skipped."
 
     ;; filetype syntax highlighting
     (css-selector               blue         nil)
+    (cider-repl-prompt-face     blue         nil          :weight bold)
+    (clojure-keyword-face       blue         nil)
     (diff-added                 green        pale-green)
     (diff-changed               blue         pale-blue)
     (diff-context               nil          nil)
