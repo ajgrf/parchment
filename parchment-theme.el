@@ -213,6 +213,7 @@ BACKGROUND are nil then they will be skipped."
     (diff-refine-removed ((((type tty)) :inherit diff-removed :underline t)
                           (t :inherit diff-removed :box t)))
     (diff-removed               red          pale-red)
+    (js2-function-call          nil          nil)
     (ledger-font-pending-face   magenta      nil          :slant italic)
     (ledger-font-posting-date-face blue      nil)
     (ledger-occur-xact-face     nil          beige)
@@ -326,6 +327,8 @@ BACKGROUND are nil then they will be skipped."
     (sh-heredoc                 green        nil          :inherit font-lock-string-face)
     (sh-quoted-exec             nil          nil)
     (vimrc-number               nil          nil)
+    (web-mode-html-tag-face     cyan         nil)
+    (web-mode-html-attr-name-face nil        nil)
 
     ;; package interface elements
     (calendar-month-header      nil          nil          :weight bold)
