@@ -2,7 +2,7 @@
 
 ;; Author: Alex Griffin <a@ajgrf.com>
 ;; URL: https://github.com/ajgrf/parchment
-;; Version: 0.3.0-pre
+;; Version: 0.3.0
 ;; Package-Requires: ((emacs "24"))
 
 ;; Copyright © 2019 Alex Griffin <a@ajgrf.com>
