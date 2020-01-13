@@ -4,6 +4,8 @@
 ### Added
 - Emacs support for `solaire-mode`. Make sure to run
   `solaire-mode-swap-bg` for good results.
+- Emacs styles for `emms`, `magit`, `transient`, Org, Clojure, JavaScript,
+  HTML, and CSS.
 
 ## 0.2.2 - 2019-04-22
 ### Added
