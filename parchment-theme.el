@@ -214,6 +214,7 @@ BACKGROUND are nil then they will be skipped."
     (ledger-font-pending-face   magenta      nil          :slant italic)
     (ledger-font-posting-date-face blue      nil)
     (ledger-occur-xact-face     nil          beige)
+    (makefile-space             nil          pale-red)
     (markdown-header-face-1     black        pale-gray    :weight bold :height 1.3 :overline t)
     (markdown-header-face-2     blue         pale-cyan    :weight bold :overline t)
     (markdown-header-face-3     green        pale-green   :weight bold :overline t)
