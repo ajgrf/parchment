@@ -29,6 +29,7 @@ let s:pale_blue =    [12, '#cceeff']
 let s:pale_magenta = [13, '#ffeaff']
 let s:pale_cyan =    [14, '#eaffff']
 let s:pale_yellow =  [15, '#ffffea']
+let s:shadow =       [ 6, '#808075']
 
 " Sets the text color, background color, and attributes for the given
 " highlight group, in both terminal and gui vim. The values of a:hlgroup and
@@ -206,8 +207,8 @@ call s:Style('ColorColumn',    [],            s:pale_red,     '')
 call s:Style('CursorColumn',   [],            s:beige,        '')
 call s:Style('CursorLine',     [],            s:beige,        '')
 call s:Style('VertSplit',      [],            s:pale_gray,    '')
-call s:Style('StatusLine',     s:pale_yellow, s:blue,         'bold')
-call s:Style('StatusLineNC',   [],            s:pale_gray,    '')
+call s:Style('StatusLine',     [],            s:pale_gray,    'bold')
+call s:Style('StatusLineNC',   s:shadow,      s:pale_gray,    '')
 call s:Style('WildMenu',       s:pale_yellow, s:cyan,         'bold')
 call s:Style('Search',         [],            [],             'bold')
 call s:Style('IncSearch',      [],            s:pale_blue,    'bold')

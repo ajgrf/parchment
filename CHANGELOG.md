@@ -2,6 +2,7 @@
 
 ## Unreleased
 ### Changed
+- The active status bar is now gray.
 - Ported Emacs theme to [autothemer](https://github.com/jasonm23/autothemer).
 
 ## 0.3.0 - 2020-01-13
