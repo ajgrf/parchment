@@ -1,6 +1,9 @@
 # Changelog
 
 ## Unreleased
+### Added
+- Emacs styles for `git-gutter`.
+
 ### Changed
 - The active status bar is now gray.
 - Ported Emacs theme to [autothemer](https://github.com/jasonm23/autothemer).
