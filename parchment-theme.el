@@ -574,7 +574,7 @@ switch themes often.")
     "Change color of HTML tags (to be called in a hook)."
     (when (member 'parchment custom-enabled-themes)
       (face-remap-add-relative 'font-lock-function-name-face
-                               `(:foreground ,magenta))))
+                               `(:foreground ,cyan))))
 
   (when parchment-want-modify-tty-colors
     (add-hook 'tty-setup-hook #'parchment-modify-tty-colors))
