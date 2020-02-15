@@ -1,5 +1,7 @@
 # Changelog
 
+## Unreleased
+
 ## 0.3.0 - 2020-01-13
 ### Added
 - Emacs support for `solaire-mode`. Make sure to run
