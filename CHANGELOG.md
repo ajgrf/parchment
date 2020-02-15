@@ -1,6 +1,8 @@
 # Changelog
 
 ## Unreleased
+### Changed
+- Ported Emacs theme to [autothemer](https://github.com/jasonm23/autothemer).
 
 ## 0.3.0 - 2020-01-13
 ### Added
