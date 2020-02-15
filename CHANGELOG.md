@@ -5,6 +5,9 @@
 - The active status bar is now gray.
 - Ported Emacs theme to [autothemer](https://github.com/jasonm23/autothemer).
 
+### Fixed
+- Keep constant line height for boxed Emacs faces.
+
 ## 0.3.0 - 2020-01-13
 ### Added
 - Emacs support for `solaire-mode`. Make sure to run
