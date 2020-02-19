@@ -6,6 +6,7 @@
 
 ### Changed
 - The active status bar is now gray.
+- Shell messages in Emacs' `shell-mode` are no longer colored.
 - Ported Emacs theme to [autothemer](https://github.com/jasonm23/autothemer).
 
 ### Fixed

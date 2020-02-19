@@ -618,11 +618,18 @@ switch themes often.")
       (face-remap-add-relative 'font-lock-function-name-face
                                `(:foreground ,cyan))))
 
+  (defun parchment-modify-shell-messages ()
+    "Change color of shell messages (to be called in a hook)."
+    (when (member 'parchment custom-enabled-themes)
+      (face-remap-add-relative 'font-lock-string-face
+                               `())))
+
   (when parchment-want-modify-tty-colors
     (add-hook 'tty-setup-hook #'parchment-modify-tty-colors))
 
   (when parchment-add-mode-hooks
-    (add-hook 'sgml-mode-hook 'parchment-modify-sgml-tags)))
+    (add-hook 'sgml-mode-hook 'parchment-modify-sgml-tags)
+    (add-hook 'shell-mode-hook 'parchment-modify-shell-messages)))
 
 ;;;###autoload
 (when (and (boundp 'custom-theme-load-path)
