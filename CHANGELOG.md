@@ -8,6 +8,7 @@
 ### Changed
 - The active status bar is now gray.
 - Shell messages in Emacs' `shell-mode` are no longer colored.
+- Region no longer extends to the end of the line in Emacs 27.
 - Ported Emacs theme to [autothemer](https://github.com/jasonm23/autothemer).
 
 ### Fixed
