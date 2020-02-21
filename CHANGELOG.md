@@ -2,7 +2,8 @@
 
 ## Unreleased
 ### Added
-- Emacs styles for `debbugs`, `diredfl`, `git-gutter`, and `swiper`.
+- Emacs styles for `debbugs`, `diredfl`, `git-gutter`, `swiper`, and
+  `tab-bar-mode`.
 
 ### Changed
 - The active status bar is now gray.
