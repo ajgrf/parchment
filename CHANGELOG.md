@@ -2,7 +2,7 @@
 
 ## Unreleased
 ### Added
-- Emacs styles for `debbugs`, `diredfl`, `git-gutter`, `swiper`, and
+- Emacs styles for TSDoc, `debbugs`, `diredfl`, `git-gutter`, `swiper`, and
   `tab-bar-mode`.
 
 ### Changed
