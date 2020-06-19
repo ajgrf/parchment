@@ -4,6 +4,7 @@
 ### Added
 - Emacs styles for TSDoc, `debbugs`, `diredfl`, `git-gutter`, `swiper`, and
   `tab-bar-mode`.
+- Vim style for the current quickfix line.
 
 ### Changed
 - The active status bar is now gray.

@@ -228,6 +228,7 @@ call s:Style('SpellBad',       s:red,         [],             'undercurl')
 call s:Style('SpellCap',       s:green,       [],             'undercurl')
 call s:Style('SpellRare',      s:green,       [],             'undercurl')
 call s:Style('SpellLocal',     s:green,       [],             'undercurl')
+call s:Style('QuickFixLine',   [],            s:pale_blue,    '')
 
 " }}}
 
