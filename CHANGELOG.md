@@ -3,7 +3,7 @@
 ## Unreleased
 ### Added
 - Emacs styles for TSDoc, `debbugs`, `diredfl`, `git-gutter`,
-  `pdf-view-midnight-colors`, `swiper`, and `tab-bar-mode`.
+  `pdf-view-midnight-colors`, `popup`, `swiper`, and `tab-bar-mode`.
 - Vim style for the current quickfix line.
 
 ### Changed
