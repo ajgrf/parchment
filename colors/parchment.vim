@@ -1,6 +1,6 @@
 " parchment - a vim colorscheme inspired by Acme and Leuven
 " Maintainer: Alex Griffin <a@ajgrf.com>
-" Version:    0.4.0
+" Version:    0.5.0-pre
 " License:    This file is placed under an ISC-style license.  See the included
 "             LICENSE file for details.
 

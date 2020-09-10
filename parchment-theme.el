@@ -2,7 +2,7 @@
 
 ;; Author: Alex Griffin <a@ajgrf.com>
 ;; URL: https://github.com/ajgrf/parchment
-;; Version: 0.4.0
+;; Version: 0.5.0-pre
 ;; Package-Requires: ((autothemer "0.2"))
 
 ;; Copyright © 2019, 2020 Alex Griffin <a@ajgrf.com>
