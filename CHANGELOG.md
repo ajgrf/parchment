@@ -1,6 +1,6 @@
 # Changelog
 
-## Unreleased
+## 0.4.0 - 2020-09-10
 ### Added
 - Emacs styles for TSDoc, `debbugs`, `diredfl`, `git-gutter`,
   `pdf-view-midnight-colors`, `popup`, `swiper`, and `tab-bar-mode`.
