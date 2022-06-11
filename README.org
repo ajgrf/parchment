@@ -10,6 +10,8 @@ colorschemes too busy.
 This theme is deprecated and will not be receiving further updates. The author
 is no longer using vim, and has switched to [[https://protesilaos.com/emacs/modus-themes][modus-themes]].
 
+Vim users may like [[https://github.com/plan9-for-vimspace/acme-colors][acme-colors]] as an alternative.
+
 Emacs users are encouraged to switch to =modus-operandi=, which can be
 configured to closely resemble =parchment= using the following snippet:
 
