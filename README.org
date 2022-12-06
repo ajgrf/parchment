@@ -126,7 +126,7 @@ repository to your local system:
 
 #+BEGIN_SRC sh
   mkdir -p ~/.emacs.d/themes
-  git clone https://github.com/ajgrf/parchment ~/.emacs.d/themes/parchment
+  git clone https://gitlab.com/ajgrf/parchment ~/.emacs.d/themes/parchment
 #+END_SRC
 
 Then add the following to your =init.el= or =.emacs= file:
@@ -144,7 +144,7 @@ I recommend using [[https://github.com/tpope/vim-pathogen][pathogen]] to install
 just clone this repo into your bundle directory:
 
 #+BEGIN_SRC sh
-  git clone https://github.com/ajgrf/parchment ~/.vim/bundle/parchment
+  git clone https://gitlab.com/ajgrf/parchment ~/.vim/bundle/parchment
 #+END_SRC
 
 ** Terminal Colors
